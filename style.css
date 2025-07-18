@@ -196,3 +196,33 @@ nav ul li a,
         margin: 2.5rem 1rem 0;
     }
 }
+.services, .projects, .contact {
+    margin: 3rem 4rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 1rem;
+}
+.services-list, .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.service-item, .project-item {
+    flex: 1 1 250px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(93,46,234,0.07);
+    padding: 1.2rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 0.7rem;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
