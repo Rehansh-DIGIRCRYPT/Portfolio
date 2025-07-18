@@ -133,3 +133,53 @@ nav ul li a,
         margin-top: 2rem;
     }
 }
+/* ===== SKILLS SECTION ===== */
+.skills {
+  margin: 4rem 0;
+  padding: 0 4rem;
+}
+.skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.skill-item {
+  background: #5d2eea;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;           /* Pill-shaped oval */
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(93,46,234,0.15);
+  white-space: nowrap;           /* Prevents text from wrapping */
+  transition: background 0.3s, transform 0.2s;
+}
+.skill-item:hover {
+  background: #4522b5;
+  transform: translateY(-2px);
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 900px) {
+  .skills {
+    padding: 0 2rem;
+  }
+  .skill-list {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .skill-item {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
