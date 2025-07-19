@@ -141,7 +141,7 @@ nav ul li a,
 
 /* === SKILLS SECTION (NEW) === */
 .skills {
-    margin: 4rem 0 0;
+    margin: 4rem 4rem 4rem;
     display: flex;
     flex-direction: column;
 }
