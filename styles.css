@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #09162a 0%, #171b46 100%);
+  color: #f0f0f0;
+  font-family: 'Fira Mono', Consolas, monospace;
+}
+.terminal-window {
+  margin: 40px auto 0 auto;
+  max-width: 820px;
+  background: #10101b;
+  border-radius: 16px;
+  border: 4px solid #fe41ad;
+  box-shadow: 0 2px 32px #db3af563;
+  padding: 0 0 70px 0;
+  min-height: 640px;
+  position: relative;
+}
+.tabs-navbar {
+  background: #fe41ad;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  height: 50px;
+}
+.tabs {
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  padding-right: 15px;
+}
+.tab-space {
+  color: #fff;
+  padding-left: 12px;
+}
+nav {
+  display: flex;
+  gap: 18px;
+}
+nav a {
+  background: none;
+  color: #ffe14c;
+  font-family: 'Fira Mono', monospace;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 10px 10px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav a:hover {
+  background: #d4207b;
+  color: #fff;
+}
+nav a.active {
+  background: #c600ff44;
+  color: #ffe14c;
+}
+.header-text {
+  color: #fe41ad;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 34px 35px 0 35px;
+  font-family: 'Fira Mono', monospace;
+  letter-spacing: 6px;
+  text-shadow: 1px 3px 21px #c600ff44;
+}
+.ascii-art {
+  color: #bfcddb;
+  font-size: 0.82rem;
+  margin: 18px 35px 0 35px;
+  font-family: 'Fira Mono', monospace;
+  white-space: pre;
+  line-height: 1.11;
+  text-align: left;
+}
+.main-desc {
+  color: #19e2ff;
+  font-size: 1.17rem;
+  margin: 18px 0 12px 35px;
+}
+.main-link a {
+  color: #0affd1;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.command-section {
+  padding: 0 35px;
+  margin-top: 12px;
+}
+.main-green {
+  color: #00ffc4;
+  font-size: 1.13rem;
+  font-family: monospace;
+}
+.option-list {
+  margin: 20px 0 20px 0;
+}
+.option-list div {
+  margin-bottom: 9px;
+  font-size: 1rem;
+  color: #ffc107;
+  cursor: pointer;
+}
+.option-list div span:first-child {
+  color: #ffe14c;
+  padding-right: 5px;
+}
+.option-list div span:nth-child(2) {
+  color: #fe41ad;
+  margin-right: 6px;
+}
+.option-list div:hover {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+.input-line {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.prompt {
+  color: #ffe14c;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+.typed-terminal {
+  background: none;
+  border: none;
+  color: #0affd1;
+  font-family: inherit;
+  font-size: 16px;
+  width: 68%;
+  outline: none;
+  padding: 3px 0;
+}
+.helpbar {
+  color: #8fa1b3;
+  font-size: 0.92rem;
+  margin-top: 10px;
+  margin-left: 88px;
+}
+.footer-text {
+  text-align: center;
+  color: #44cafe;
+  font-size: 1rem;
+  margin-top: 20px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+}
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.75;
+  filter: grayscale(0.7);
+  transition: opacity 0.18s, filter 0.18s;
+}
+.footer-social a:hover img {
+  filter: none;
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .terminal-window {
+    max-width: 99vw;
+    min-height: 99vh;
+    border-radius: 0px;
+    border-width: 3px;
+    padding-bottom: 110px;
+  }
+  .header-text {
+    font-size: 1.4rem;
+    padding: 18px 7vw 0 7vw;
+    letter-spacing: 3px;
+  }
+  .ascii-art {
+    font-size: 0.6rem;
+    margin: 16px 7vw 0 7vw;
+  }
+  .main-desc,
+  .command-section,
+  .main-link a {
+    font-size: 1rem;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+  .tabs-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 6px 7vw;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-bottom: 10px;
+  }
+  nav a {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px 6px 0 0;
+  }
+  .input-line {
+    margin-top: 12px;
+    padding-left: 0;
+  }
+  .footer-social {
+    gap: 20px;
+  }
+  .footer-social img {
+    width: 26px;
+    height: 26px;
+  }
+}
