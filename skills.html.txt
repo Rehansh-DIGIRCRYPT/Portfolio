@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HarryB Potter | Skills</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="terminal-window">
+    <div class="tabs-navbar">
+      <div class="tabs">
+        <span>Terminal x</span><span class="tab-space">+</span>
+      </div>
+      <nav>
+        <a href="index.html">[1] About</a>
+        <a href="experience.html">[2] Experience</a>
+        <a href="work.html">[3] Work</a>
+        <a href="certifications.html">[4] Certifications</a>
+        <a href="skills.html" class="active">[5] Skills</a>
+        <a href="contact.html">[6] Contact</a>
+      </nav>
+    </div>
+    <div class="header-text">SKILLS</div>
+    <ul class="page-list">
+      <li>Networking, Cryptography, Compliance</li>
+      <li>Python, Java, HTML, CSS</li>
+      <li>Prompt Engineering</li>
+      <li>Web Development</li>
+      <li>Project Management & Collaboration</li>
+    </ul>
+    <div class="footer-text">Created and Designed by Rehansh Mohta</div>
+    <div class="footer-social">
+      <a href="https://github.com/Rehansh-DIGIRCRYPT" target="_blank"><img src="assets/github.svg" alt="GitHub" /></a>
+      <a href=" https://x.com/Rehansh7778?t=PnnfLpYO3EpYIueKAiPGQw&s=08" target="_blank"><img src="assets/twitter.svg" alt="Twitter" /></a>
+      <a href="https://www.linkedin.com/in/rehansh-mohta-780590253/" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
+
+    </div>
+  </div>
+</body>
+</html>
