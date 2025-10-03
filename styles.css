@@ -26,14 +26,13 @@ body {
   display: flex;
   flex-direction: column;
   background: #10101b;
-  border: 4px solid #fe41ad;
+  border: 4px solid #2196f3;
   box-shadow: 0 2px 32px #db3af563;
   position: relative;
 }
 .tabs-navbar {
-  background: #fe41ad;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  background: #2196f3;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,38 +62,28 @@ nav a {
   font-weight: bold;
   font-size: 15px;
   padding: 6px 12px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
   text-decoration: none;
   cursor: pointer;
   background: none;
   transition: background 0.3s;
 }
-nav a:hover { background: #d4207b; color: #fff; }
-nav a.active { background: #c600ff44; color: #ffe14c; }
+nav a:hover { background: #64b5f6; color: #fff; }
+nav a.active { background: #1976d2; color: #ffe14c; }
+
 .header-text {
-  color: #fe41ad;
+  color: #2196f3;
   font-size: clamp(2rem, 5vw, 2.6rem);
   font-weight: 700;
   padding: 24px 5vw 0 5vw;
   font-family: 'Fira Mono', monospace;
   letter-spacing: 0.18em;
-  text-shadow: 1px 3px 21px #c600ff44;
+  text-shadow: 1px 3px 21px #05497555;
   word-break: break-word;
   line-height: 1.18;
 }
-.ascii-art {
-  color: #bfcddb;
-  font-size: 0.88rem;
-  margin: 12px 5vw 0 5vw;
-  font-family: 'Fira Mono', monospace;
-  white-space: pre-line;
-  line-height: 1.11;
-  text-align: left;
-  max-width: 95vw;
-  overflow-x: auto;
-}
 
-/* responsive about section (for <div class="about-output">) */
+/* About-section remains a div, not pre! */
 .about-output {
   color: #f0f0f0;
   font-family: 'Fira Mono', Consolas, monospace;
@@ -146,8 +135,9 @@ nav a.active { background: #c600ff44; color: #ffe14c; }
   word-break: break-word;
 }
 .option-list div span:first-child { color: #ffe14c; padding-right: 5px; }
-.option-list div span:nth-child(2) { color: #fe41ad; margin-right: 6px; }
+.option-list div span:nth-child(2) { color: #2196f3; margin-right: 6px; }
 .option-list div:hover { color: #00ffcc; text-decoration: underline; }
+
 .input-line {
   margin-top: 12px;
   display: flex;
@@ -180,13 +170,19 @@ nav a.active { background: #c600ff44; color: #ffe14c; }
   margin-left: 68px;
   word-wrap: break-word;
 }
+
+/* Footer stick absolutely to the bottom, always visible on all pages */
 .footer-text {
   text-align: center;
   color: #44cafe;
   font-size: 1rem;
-  margin: 9px 0 0 0;
   opacity: 0.8;
   letter-spacing: 1px;
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 35px;
+  width: 100%;
+  margin: 0;
 }
 .footer-social {
   display: flex;
@@ -204,46 +200,18 @@ nav a.active { background: #c600ff44; color: #ffe14c; }
   transition: opacity 0.18s, filter 0.18s;
 }
 .footer-social a:hover img { filter: none; opacity: 1; }
+
+/* Responsive styles */
 @media (max-width: 800px) {
-  .terminal-window {
-    border-width: 2.5px;
-    box-shadow: 0 1px 12px #db3af563;
-    padding-bottom: 100px;
-    padding-top: 0;
-  }
-  .tabs-navbar {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 5px 3vw 3px 3vw;
-    height: auto;
-    gap: 0;
-  }
+  .terminal-window { border-width: 2.5px; box-shadow: 0 1px 12px #db3af563; padding-bottom: 100px; padding-top: 0; }
+  .tabs-navbar { flex-direction: column; align-items: stretch; padding: 5px 3vw 3px 3vw; height: auto; gap: 0; }
   nav { gap: 7px; }
-  nav a {
-    font-size: 12.5px;
-    padding: 4.5px 7px;
-    border-radius: 6px 6px 0 0;
-  }
+  nav a { font-size: 12.5px; padding: 4.5px 7px; }
   .header-text { font-size: clamp(1.1rem, 6vw, 2rem); padding: 14px 4vw 0 4vw; }
-  .ascii-art { font-size: 0.62rem; margin: 10px 4vw 0 4vw; }
-  .main-desc,
-  .about-output,
-  .command-section,
-  .main-link a { font-size: 0.97rem; margin-left: 4vw; margin-right: 4vw; }
-  .option-list div,
-  .main-green { font-size: 0.95rem; }
+  .main-desc, .about-output, .command-section, .main-link a { font-size: 0.97rem; margin-left: 4vw; margin-right: 4vw; }
+  .option-list div, .main-green { font-size: 0.95rem; }
   .typed-terminal { font-size: 0.96rem; max-width: 98vw; }
   .input-line { flex-direction: column; align-items: flex-start; width: 100%; }
   .prompt { font-size: 0.98rem; margin-bottom: 2px; }
   .footer-social { gap: 11px; }
-  .footer-social img { width: 20px; height: 20px; }
-}
-@media (max-width: 480px) {
-  .tabs-navbar { padding: 3px 2vw 2px 2vw; }
-  .header-text { font-size: 1.0rem; padding: 11px 2vw 0 2vw;}
-  .ascii-art { margin: 4px 2.5vw 0 2.5vw; font-size: 0.55rem;}
-  .main-desc, .about-output, .command-section,
-  .main-link a { font-size: 0.9rem; margin-left: 2vw; margin-right: 2vw;}
-  .typed-terminal { font-size: 0.89rem; min-width: 80px;}
-  .footer-text { font-size: 0.8rem; }
-}
+  .footer-social img { width: 20px; height
