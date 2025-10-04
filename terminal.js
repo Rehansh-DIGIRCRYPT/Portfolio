@@ -2,7 +2,7 @@ const terminalInput = document.getElementById('terminalInput');
 
 const sections = {
   about: `👋 Hi! Rehansh Mohta.\n- My goal is to contribute to innovative and impactful projects\n- Passionate about Cybersecurity and Forensics\n- I aim to explore the field of cryptography with network protocols!`,
-  experience: `- Project Management Intern @ DIGIR Innovative Services, India\n- YouTube Tech Content Creator (150+ Subscribers)\n- Cyber Security Awareness Mentor at Jan Skishan Sansthan Bikaner`,
+  experience: `- Co Founder @ DIGIR Innovative Services\n- YouTube Tech Content Creator \n- Cyber Security Awareness Mentor at \n - Jan Skishan Sansthan Bikaner`,
   work: `-Con-Log - IP ADDRESS detection tool)\n- Oh Shakes Website ( Server and Project Managment )\n- Various Python Programs on GitHub\n- Various D.S.A Programs on GitHub`,
   certifications: `- CEH - Certified Ethical Hacker\n- CND - Certified Network Defender\n- ECSS - EC Council \n- Foundation of Cloud and Edge ML`,
   skills: `- Network,Cryptography, SIEM\n- Python, JavaScript, HTML, CSS\n- Prompt Engineering and AI tools\n- Web Development\n- Project Management`,
