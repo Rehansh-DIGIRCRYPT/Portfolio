@@ -1,12 +1,12 @@
 const terminalInput = document.getElementById('terminalInput');
 
 const sections = {
-  about: `👋 Hi! Rehansh Mohta.\n\nMy goal is to contribute to innovative and impactful projects Passionate about Cybersecurity and Forensics, professionally I aim to explore the field of cryptography with network protocols!`,
+  about: `👋 Hi! Rehansh Mohta.\n- My goal is to contribute to innovative and impactful projects\n- Passionate about Cybersecurity and Forensics\n- I aim to explore the field of cryptography with network protocols!`,
   experience: `- Project Management Intern @ DIGIR Innovative Services, India\n- YouTube Tech Content Creator (150+ Subscribers)\n- Cyber Security Awareness Mentor at Jan Skishan Sansthan Bikaner`,
   work: `-Con-Log - IP ADDRESS detection tool)\n- Oh Shakes Website ( Server and Project Managment )\n- Various Python Programs on GitHub\n- Various D.S.A Programs on GitHub`,
-  certifications: `- Certified AI Programmer - AI Institute 2025\n- Machine Learning Certification - Coursera\n- Cybersecurity Foundations - Udemy\n- Add your certifications here`,
-  skills: `- Python, JavaScript, HTML, CSS\n- Machine Learning, AI\n- Web Development\n- Project Management`,
-  contact: `💼 Mail: harrybpotter@email.com\n🌐 LinkedIn: linkedin.com/in/harrybpotter\n🐙 GitHub: github.com/harrybpotter\n💬 Twitter: @harrybpotter`
+  certifications: `- CEH - Certified Ethical Hacker\n- CND - Certified Network Defender\n- ECSS - EC Council \n- Foundation of Cloud and Edge ML`,
+  skills: `- Network,Cryptography, SIEM\n- Python, JavaScript, HTML, CSS\n- Prompt Engineering and AI tools\n- Web Development\n- Project Management`,
+  contact: `💼 Mail: rehansh11mohta@gmail.com\n🌐 LinkedIn:https://www.linkedin.com/in/rehansh-mohta-780590253\n🐙 GitHub:https://github.com/Rehansh-DIGIRCRYPT\n💬 X: @Rehansh7778`
 };
 
 function showOutput(section) {
