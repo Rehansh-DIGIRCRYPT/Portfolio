@@ -21,18 +21,18 @@ function showOutput(section) {
     let container = document.querySelector('.command-section');
     container.appendChild(output);
   }
-  output.textContent = sections[section] || 'Command not recognized. Try aboutMe, experience, work, certifications, skills, or contactMe.';
+  output.textContent = sections[section] || 'Command not recognized. Try open and then aboutMe, experience, work, certifications, skills, or run contactMe.';
 }
 
 terminalInput.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     let cmd = terminalInput.value.trim().toLowerCase();
-    if (cmd === 'aboutme' || cmd === 'about') showOutput('about');
-    else if (cmd === 'experience') showOutput('experience');
-    else if (cmd === 'work') showOutput('work');
-    else if (cmd === 'certifications') showOutput('certifications');
-    else if (cmd === 'skills') showOutput('skills');
-    else if (cmd === 'contactme' || cmd === 'contact') showOutput('contact');
+    if (cmd === 'open aboutme' || cmd === 'about') showOutput('about');
+    else if (cmd === 'open experience') showOutput('experience');
+    else if (cmd === 'open work') showOutput('work');
+    else if (cmd === 'open certifications') showOutput('certifications');
+    else if (cmd === 'open skills') showOutput('skills');
+    else if (cmd === 'run contactme' || cmd === 'contact') showOutput('contact');
     else showOutput('');
     terminalInput.value = '';
   }
